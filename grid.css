@@ -1,0 +1,126 @@
+#layout{
+  grid-template-areas:
+  "hdl hdc hdr"
+  "sb1 cnt sb2"
+  "ftl ftc ftr";
+  display: grid;
+  grid-template-rows:
+    [hdr] 100px
+    [cnt] auto
+    [ftr] 50px;
+ grid-template-columns:
+  [sb1] 0.5fr
+  [main] 2fr
+  [sb2] 0.5fr;
+
+  [hdl] 0.5fr [hdc] 2fr [hdr] 0.5fr; 
+  [ftl] 0.5fr [ftc] 2fr [ftr] 0.5fr; 
+}
+div{
+  color : red;
+  text-align: left;
+  font-size: 20px;
+  border: solid purple;
+}
+
+/*#layout > #left {
+  grid-area: hd
+}*/
+
+
+
+
+
+
+#header-right{
+  grid-area: hdr;
+  text-align: center;
+  color: purple;
+    border-left-style:dashed;
+
+}
+
+#header-center {
+  grid-area: hdc;
+  text-align: center;
+    border-left-style:dashed;
+      border-right-style:dashed;
+      color: purple;
+}
+
+#header-left {
+  grid-area: hdl
+  border-left-style:dashed;
+    border-right-style:dashed;
+    color: purple;
+}
+
+
+
+
+#footer-right{
+  grid-area: ftr;
+  text-align: center;
+    border-left-style:dashed;
+    color: purple;
+
+}
+
+#footer-center {
+  grid-area: ftc;
+  text-align: center;
+    border-left-style:dashed;
+      border-left-style:dashed;
+        border-right-style:dashed;
+        color: purple;
+
+}
+
+#footer-left {
+  grid-area: ftl
+    border-left-style:dashed;
+      border-right-style:dashed;
+      color: purple;
+
+}
+p{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#two{
+  background-color: white;
+  grid-area: sb1;
+  border: solid purple;
+  color: purple;
+
+}
+#three{
+  background-color: white;
+  grid-area: cnt;
+  height: 60px;
+  border:solid purple;
+  color: purple;
+}
+#four{
+  background-color:white;
+  grid-area: sb2;
+    border: solid purple;
+    color: purple;
+}
+#five{
+  background-color:white;
+  grid-area: ft;
+  border: solid purple;
+  color: purple;
+}
